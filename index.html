@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Almhem — Höstkollektionen 2026</title>
+  <meta name="description" content="Almhem — nordiska möbler och textil. Höstkollektionen 2026: soffor, bord, textil och belysning i naturmaterial." />
+
+  <!--
+    og:url and og:image below use relative/placeholder values — fill in the
+    real deployed origin once this is published (e.g. https://almhem.dittdomän.se/
+    and an absolute image URL) so link previews on social/Slack/etc. resolve.
+  -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Almhem" />
+  <meta property="og:title" content="Almhem — Höstkollektionen 2026" />
+  <meta property="og:description" content="Nordiska möbler och textil i naturmaterial. Höstkollektionen 2026: soffor, bord, textil och belysning." />
+  <meta property="og:image" content="images/hero-fonster.png" />
+  <!-- <meta property="og:url" content="https://REPLACE-WITH-DEPLOYED-DOMAIN/" /> -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Almhem — Höstkollektionen 2026" />
+  <meta name="twitter:description" content="Nordiska möbler och textil i naturmaterial. Höstkollektionen 2026: soffor, bord, textil och belysning." />
+  <meta name="twitter:image" content="images/hero-fonster.png" />
+  <!-- <link rel="canonical" href="https://REPLACE-WITH-DEPLOYED-DOMAIN/" /> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============================= Promo bar ============================= -->
+  <div class="promobar">
+    <p class="promobar__inner">
+      <span class="promobar__item--ship1">Fri frakt över 2 000 kr</span>
+      <span class="promobar__item--campaign">Höstkollektionen 2026 — släpp 12 sept</span>
+      <span class="promobar__item--ship2">Hemleverans i hela Norden</span>
+    </p>
+  </div>
+
+  <!-- ============================== Header ================================ -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="wordmark">Almhem</a>
+      <nav class="site-nav" aria-label="Huvudmeny">
+        <a href="#nyheter" class="is-active">Höst 2026</a>
+        <a href="#nyheter">Nyheter</a>
+        <a href="#kategorier">Möbler</a>
+        <a href="#kategorier">Textil</a>
+        <a href="#belysning">Belysning</a>
+        <a href="#material">Material</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#" class="header-actions__link">Sök</a>
+        <a href="#" class="header-actions__link">Konto</a>
+        <button type="button" class="cart-pill" id="cartToggle" aria-haspopup="dialog" aria-controls="cartDrawer">
+          <span class="cart-pill__label-full">Varukorg</span><span class="cart-pill__label-short">Korg</span> (<span class="cart-count" data-cart-count>0</span>)
+        </button>
+        <button type="button" class="hamburger" id="hamburger" aria-label="Öppna meny" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav id="mobileMenu" class="mobile-menu" aria-label="Mobilmeny">
+      <div class="mobile-menu__inner">
+        <div class="mobile-menu__scroll">
+          <a href="#nyheter" data-menu-link>Höst 2026</a>
+          <a href="#nyheter" data-menu-link>Nyheter</a>
+          <a href="#kategorier" data-menu-link>Möbler</a>
+          <a href="#kategorier" data-menu-link>Textil</a>
+          <a href="#belysning" data-menu-link>Belysning</a>
+          <a href="#journal" data-menu-link>Journalen</a>
+          <a href="#material" data-menu-link>Material</a>
+          <a href="#" data-menu-link>Sök</a>
+          <a href="#" data-menu-link>Konto</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =============================== Hero ================================= -->
+  <section class="hero">
+    <div class="hero__media">
+      <picture>
+        <source
+          type="image/webp"
+          srcset="images/hero-fonster-480w.webp 480w, images/hero-fonster-720w.webp 720w, images/hero-fonster-960w.webp 960w, images/hero-fonster-1280w.webp 1280w, images/hero-fonster.webp 1672w"
+          sizes="100vw"
+        />
+        <img
+          class="hero__img"
+          src="images/hero-fonster.png"
+          srcset="images/hero-fonster-480w.png 480w, images/hero-fonster-720w.png 720w, images/hero-fonster-960w.png 960w, images/hero-fonster-1280w.png 1280w, images/hero-fonster.png 1672w"
+          sizes="100vw"
+          alt="Morgonljus genom stora fönster i ett vardagsrum inrett med Almhems möbler"
+        />
+      </picture>
+    </div>
+    <div class="hero__scrim" aria-hidden="true"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Kampanj · till 30 september</p>
+      <h1 class="hero__title">Höstkollektionen <em>2026</em></h1>
+      <p class="hero__body"><strong>20 % på hela kollektionen</strong> — möbler, textil och belysning i trä, linne och obehandlad metall. Tillverkat i Småland.</p>
+      <div class="hero__actions">
+        <a href="#nyheter" class="btn btn--primary">Se kollektionen</a>
+        <a href="#kategorier" class="btn btn--outline">Handla per kategori</a>
+      </div>
+      <div class="hero__scrollcue">
+        <span class="hero__scrollcue-rule" aria-hidden="true"></span>
+        <span class="hero__scrollcue-label">Skrolla</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-surface">
+
+    <!-- ============================ USP strip ============================= -->
+    <section class="usp reveal-stagger" data-stagger>
+      <div class="usp__cell">
+        <p class="usp__cell-title">Tillverkat i Småland</p>
+        <p class="usp__cell-body">Små serier hos snickerier vi besöker själva</p>
+      </div>
+      <div class="usp__cell">
+        <p class="usp__cell-title">25 års reservdelar</p>
+        <p class="usp__cell-body">Klädsel och delar går alltid att beställa</p>
+      </div>
+      <div class="usp__cell">
+        <p class="usp__cell-title">Fri frakt över 2 000 kr</p>
+        <p class="usp__cell-body">Hemleverans inom Norden, 2–4 veckor</p>
+      </div>
+      <div class="usp__cell">
+        <p class="usp__cell-title">100 dagars öppet köp</p>
+        <p class="usp__cell-body">Prova hemma i tre månader</p>
+      </div>
+    </section>
+
+    <!-- ========================== Product grid ============================ -->
+    <section id="nyheter" class="section product-grid">
+      <div class="section-head">
+        <div class="section-head__text">
+          <p class="eyebrow">Höst 2026</p>
+          <h2>Nyheter i kollektionen</h2>
+          <p class="section-head__note">I den här demon har endast <a href="produkt-krona-savja.html">Krona Sävja</a> en fullständig produktsida — övriga kort visar katalogvyn.</p>
+        </div>
+        <div class="filter-chips" role="group" aria-label="Filtrera produkter">
+          <button type="button" class="filter-chip" data-filter="Allt" aria-pressed="true">Allt</button>
+          <button type="button" class="filter-chip" data-filter="Soffor" aria-pressed="false">Soffor</button>
+          <button type="button" class="filter-chip" data-filter="Bord" aria-pressed="false">Bord</button>
+          <button type="button" class="filter-chip" data-filter="Textil" aria-pressed="false">Textil</button>
+          <button type="button" class="filter-chip" data-filter="Belysning" aria-pressed="false">Belysning</button>
+        </div>
+      </div>
+
+      <div class="product-grid__list reveal-stagger" data-stagger id="productList">
+        <!-- Cards are rendered from PRODUCTS in main.js (see #cardTemplate) so the markup is not hand-duplicated. -->
+      </div>
+      <noscript>
+        <ul class="noscript-list">
+          <li><a href="produkt-krona-savja.html">Krona Sävja, 12 ljus</a> — Belysning — 34 900 kr</li>
+          <li>Soffa Linnea — Soffor — 19 900 kr</li>
+          <li>Matbord Alm — Bord — 18 400 kr</li>
+          <li>Bäddset Höstlöv — Textil — 1 290 kr</li>
+          <li>Plankbord Sävja — Bord — 26 700 kr</li>
+          <li>Bordslampa Travertin — Belysning — 3 900 kr</li>
+          <li>Fåtölj Bouclé Ro — Soffor — 12 400 kr</li>
+          <li>Pläd Gotland — Textil — 2 450 kr</li>
+        </ul>
+      </noscript>
+    </section>
+
+    <template id="cardTemplate">
+      <article class="card" data-role="card">
+        <div class="card__media">
+          <picture>
+            <source data-role="image-webp" type="image/webp" />
+            <img data-role="image" alt="" loading="lazy" />
+          </picture>
+          <span class="card__tag" data-role="tag"></span>
+          <button type="button" class="card__quickbuy" data-role="quickbuy">Snabbköp</button>
+        </div>
+        <div class="card__text">
+          <p class="card__category" data-role="category"></p>
+          <h3 class="card__name"><a data-role="name-link" href="#"></a></h3>
+          <p class="card__desc" data-role="desc"></p>
+          <div class="swatches" data-role="swatches"></div>
+          <div class="price-row" data-role="price-row"></div>
+          <button type="button" class="btn-add" data-role="add">Lägg i varukorg</button>
+        </div>
+      </article>
+    </template>
+
+    <!-- ============================ Quote band ============================= -->
+    <section class="quote-band parallax quote-band--linne reveal">
+      <div class="quote-band__scrim" aria-hidden="true"></div>
+      <p class="quote-band__text"><span class="quote-band__text-inner">Ett hem byggs långsamt, av få saker som tål att levas med.</span></p>
+    </section>
+
+    <!-- =========================== Category grid ============================ -->
+    <section id="kategorier" class="section category-grid">
+      <h2>Handla per kategori</h2>
+      <div class="category-grid__list reveal-stagger" data-stagger>
+        <a href="#nyheter" class="category-tile">
+          <picture>
+            <source data-role="tile-source" type="image/webp" sizes="(min-width: 900px) 25vw, 45vw" />
+            <img src="images/soffa-boucle.png" srcset="" sizes="(min-width: 900px) 25vw, 45vw" alt="Soffor i naturmaterial" data-role="tile-img" />
+          </picture>
+          <div class="category-tile__scrim" aria-hidden="true"></div>
+          <div class="category-tile__caption">
+            <span class="category-tile__name">Soffor</span>
+            <span class="category-tile__count">12 artiklar</span>
+          </div>
+        </a>
+        <a href="#nyheter" class="category-tile">
+          <picture>
+            <source data-role="tile-source" type="image/webp" sizes="(min-width: 900px) 25vw, 45vw" />
+            <img src="images/matbord-langt.png" srcset="" sizes="(min-width: 900px) 25vw, 45vw" alt="Matbord i massiv ask" data-role="tile-img" />
+          </picture>
+          <div class="category-tile__scrim" aria-hidden="true"></div>
+          <div class="category-tile__caption">
+            <span class="category-tile__name">Bord</span>
+            <span class="category-tile__count">9 artiklar</span>
+          </div>
+        </a>
+        <a href="#nyheter" class="category-tile">
+          <picture>
+            <source data-role="tile-source" type="image/webp" sizes="(min-width: 900px) 25vw, 45vw" />
+            <img src="images/sovrum-linne.png" srcset="" sizes="(min-width: 900px) 25vw, 45vw" alt="Sängkläder i tvättat linne" data-role="tile-img" />
+          </picture>
+          <div class="category-tile__scrim" aria-hidden="true"></div>
+          <div class="category-tile__caption">
+            <span class="category-tile__name">Textil</span>
+            <span class="category-tile__count">14 artiklar</span>
+          </div>
+        </a>
+        <a href="#nyheter" class="category-tile">
+          <picture>
+            <source data-role="tile-source" type="image/webp" sizes="(min-width: 900px) 25vw, 45vw" />
+            <img src="images/lampa-bord.png" srcset="" sizes="(min-width: 900px) 25vw, 45vw" alt="Belysning i travertin och glas" data-role="tile-img" />
+          </picture>
+          <div class="category-tile__scrim" aria-hidden="true"></div>
+          <div class="category-tile__caption">
+            <span class="category-tile__name">Belysning</span>
+            <span class="category-tile__count">14 artiklar</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================ Journal story ============================ -->
+    <section id="journal" class="section journal reveal">
+      <div class="journal__grid">
+        <figure class="journal__figure">
+          <div class="journal__frame">
+            <picture>
+              <source type="image/webp" srcset="images/verkstad-oljning-480w.webp 480w, images/verkstad-oljning-720w.webp 720w, images/verkstad-oljning.webp 831w" sizes="(min-width: 900px) 45vw, 90vw" />
+              <img src="images/verkstad-oljning.png" srcset="images/verkstad-oljning-480w.png 480w, images/verkstad-oljning-720w.png 720w, images/verkstad-oljning.png 831w" sizes="(min-width: 900px) 45vw, 90vw" alt="Snickare i förkläde som gnider in linolja i en rund askskiva med trasa vid hyvelbänken" />
+            </picture>
+            <span class="journal__badge">Bodafors · augusti 2026</span>
+          </div>
+          <figcaption class="journal__caption">Tredje lagret linolja, torkning tolv timmar</figcaption>
+        </figure>
+        <div class="journal__body">
+          <p class="eyebrow">Journalen · nr 14</p>
+          <h2>Fyra dagar för <em>ett bord</em></h2>
+          <p>Kenneth har oljat askskivor i trettioett år. Han gör det tre gånger, med tolv timmars torkning emellan, och känner med handryggen mellan varven — inte med ögat. <span class="journal__quote">”Ser man det är det för sent”</span>, säger han. Det är därför ett Plankbord Sävja tar fyra dagar att bli färdigt och inte fyrtio minuter.</p>
+          <p>Verkstaden i Bodafors gör nitton bord i veckan. Vi har aldrig bett dem göra fler.</p>
+          <div class="journal__stats">
+            <div class="journal__stat">
+              <p class="journal__stat-num">31</p>
+              <p class="journal__stat-label">År vid bänken</p>
+            </div>
+            <div class="journal__stat">
+              <p class="journal__stat-num">3×</p>
+              <p class="journal__stat-label">Oljade lager</p>
+            </div>
+            <div class="journal__stat">
+              <p class="journal__stat-num">19</p>
+              <p class="journal__stat-label">Bord per vecka</p>
+            </div>
+          </div>
+          <a href="#" class="journal__link">Läs hela reportaget<span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ Material band ============================ -->
+    <section id="material" class="material-band parallax reveal">
+      <div class="material-band__scrim" aria-hidden="true"></div>
+      <div class="material-band__sweep" aria-hidden="true"></div>
+      <div class="material-band__inner">
+        <div class="material-band__copy">
+          <p class="eyebrow material-band__eyebrow">Material &amp; hantverk</p>
+          <h2>Tre material, <em>inga genvägar</em></h2>
+          <p>Massiv ask, tvättat europeiskt linne, ull från Gotland. Olja eller såpa — inget lack. Varje möbel har ett nummer, så klädsel och delar går att beställa i minst 25 år.</p>
+          <div class="material-band__list">
+            <div><p class="material-band__list-num">01</p><p class="material-band__list-label">Ask, oljad eller såpad</p></div>
+            <div><p class="material-band__list-num">02</p><p class="material-band__list-label">Linne, stentvättat</p></div>
+            <div><p class="material-band__list-num">03</p><p class="material-band__list-label">Ull, växtfärgad</p></div>
+          </div>
+          <a href="#" class="btn btn--primary material-band__cta">Beställ materialprover</a>
+        </div>
+        <div class="sample-card">
+          <div class="sample-card__media">
+            <picture>
+              <source type="image/webp" srcset="images/detaljer-collage-480w.webp 480w, images/detaljer-collage-720w.webp 720w, images/detaljer-collage-960w.webp 960w" sizes="(min-width: 900px) 30vw, 80vw" />
+              <img src="images/detaljer-collage.png" srcset="images/detaljer-collage-480w.png 480w, images/detaljer-collage-720w.png 720w, images/detaljer-collage-960w.png 960w" sizes="(min-width: 900px) 30vw, 80vw" alt="Materialprover i trä, linne och ull" />
+            </picture>
+          </div>
+          <div class="sample-card__foot">
+            <span>Provkarta höst 2026</span>
+            <span>Nio prover · 0 kr</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ Lighting section ========================== -->
+    <section id="belysning" class="lighting reveal">
+      <div class="lighting__head">
+        <div>
+          <p class="eyebrow lighting__eyebrow">Belysning</p>
+          <h2>Ljuset gör <em>rummet</em></h2>
+        </div>
+        <p class="lighting__intro">Kristall, räfflat glas och antikbehandlad messing. Dimbart varmvitt ljus som klarar både middag och morgon.</p>
+      </div>
+      <div class="lighting__grid">
+        <a href="produkt-krona-savja.html" class="lighting-hero">
+          <picture>
+            <source type="image/webp" srcset="images/lampa-krona-480w.webp 480w, images/lampa-krona-720w.webp 720w, images/lampa-krona-960w.webp 960w, images/lampa-krona.webp 1144w" sizes="(min-width: 900px) 45vw, 90vw" />
+            <img src="images/lampa-krona.png" srcset="images/lampa-krona-480w.png 480w, images/lampa-krona-720w.png 720w, images/lampa-krona-960w.png 960w, images/lampa-krona.png 1144w" sizes="(min-width: 900px) 45vw, 90vw" alt="Kristallkrona över matplats" />
+          </picture>
+          <div class="lighting-hero__scrim" aria-hidden="true"></div>
+          <div class="lighting-hero__content">
+            <p class="lighting-hero__eyebrow">Signaturpjäs</p>
+            <p class="lighting-hero__title">Krona Sävja, 12 ljus</p>
+            <div class="lighting-hero__row">
+              <span class="lighting-hero__price">34 900 kr</span>
+              <span class="lighting-hero__cta">Se kronan</span>
+            </div>
+          </div>
+        </a>
+        <div class="lighting__side">
+          <a href="#" class="lighting-wide">
+            <picture>
+              <source type="image/webp" srcset="images/belysning-pendlar-480w.webp 480w, images/belysning-pendlar-720w.webp 720w, images/belysning-pendlar-960w.webp 960w, images/belysning-pendlar.webp 1145w" sizes="(min-width: 900px) 45vw, 90vw" />
+              <img src="images/belysning-pendlar.png" srcset="images/belysning-pendlar-480w.png 480w, images/belysning-pendlar-720w.png 720w, images/belysning-pendlar-960w.png 960w, images/belysning-pendlar.png 1145w" sizes="(min-width: 900px) 45vw, 90vw" alt="Pendelserie i räfflat glas och messing" />
+            </picture>
+            <div class="lighting-wide__scrim" aria-hidden="true"></div>
+            <div class="lighting-wide__caption">
+              <span class="lighting-wide__name">Hela serien</span>
+              <span class="lighting-wide__meta">Pendel · bords · vägg</span>
+            </div>
+          </a>
+          <div class="lighting__pair">
+            <a href="#" class="lighting-wall">
+              <picture>
+                <source type="image/webp" srcset="images/lampa-vagg-480w.webp 480w, images/lampa-vagg-720w.webp 720w, images/lampa-vagg-960w.webp 960w, images/lampa-vagg.webp 1145w" sizes="(min-width: 900px) 22vw, 45vw" />
+                <img src="images/lampa-vagg.png" srcset="images/lampa-vagg-480w.png 480w, images/lampa-vagg-720w.png 720w, images/lampa-vagg-960w.png 960w, images/lampa-vagg.png 1145w" sizes="(min-width: 900px) 22vw, 45vw" alt="Vägglampa i kristallglas" />
+              </picture>
+              <div class="lighting-wall__scrim" aria-hidden="true"></div>
+              <span class="lighting-wall__label">Vägg</span>
+            </a>
+            <div class="lighting-note">
+              <div class="lighting-note__text">
+                <p class="lighting-note__eyebrow">Ljussättning</p>
+                <p class="lighting-note__body">Boka 30 minuter med vår ljusdesigner — vi ritar en plan för hela hemmet.</p>
+              </div>
+              <a href="#" class="lighting-note__link">Boka rådgivning</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== Newsletter band =========================== -->
+    <section class="newsletter reveal">
+      <picture>
+        <source type="image/webp" srcset="images/matbord-runt-480w.webp 480w, images/matbord-runt-720w.webp 720w, images/matbord-runt-960w.webp 960w, images/matbord-runt-1280w.webp 1280w, images/matbord-runt.webp 1536w" sizes="100vw" />
+        <img class="newsletter__img" src="images/matbord-runt.png" srcset="images/matbord-runt-480w.png 480w, images/matbord-runt-720w.png 720w, images/matbord-runt-960w.png 960w, images/matbord-runt-1280w.png 1280w, images/matbord-runt.png 1536w" sizes="100vw" alt="Matplats i morgonljus" />
+      </picture>
+      <div class="newsletter__scrim" aria-hidden="true"></div>
+      <div class="newsletter__inner">
+        <div class="newsletter__copy">
+          <p class="eyebrow newsletter__eyebrow">Nyhetsbrev</p>
+          <h2>Brev från <em>verkstaden</em></h2>
+          <p>Ett mejl i månaden: nya material, hur en möbel blir till, tidiga släpp. Inga rabattkoder.</p>
+        </div>
+        <div class="newsletter__form-wrap">
+          <form class="newsletter__form" id="newsletterForm" novalidate>
+            <label class="visually-hidden" for="newsletterEmail">E-postadress</label>
+            <input class="newsletter__input" type="email" id="newsletterEmail" name="email" placeholder="din@epost.se" required autocomplete="email" />
+            <button type="submit" class="newsletter__submit">Prenumerera</button>
+          </form>
+          <p class="newsletter__status" id="newsletterStatus" role="status" aria-live="polite"></p>
+          <p class="newsletter__footnote">Cirka 4 200 läsare · avsluta när du vill</p>
+        </div>
+      </div>
+    </section>
+
+  </div> <!-- /.page-surface -->
+
+  <!-- ================================ Footer =============================== -->
+  <footer class="site-footer">
+    <div class="site-footer__grid">
+      <div>
+        <p class="site-footer__brand-name">Almhem</p>
+        <p class="site-footer__address">Tredje Långgatan 18<br />413 03 Göteborg</p>
+      </div>
+      <div class="site-footer__col">
+        <p class="site-footer__heading">Handla</p>
+        <a href="#nyheter">Nyheter</a>
+        <a href="#kategorier">Möbler</a>
+        <a href="#kategorier">Textil</a>
+      </div>
+      <div class="site-footer__col">
+        <p class="site-footer__heading">Kundservice</p>
+        <a href="#">Leverans &amp; retur</a>
+        <a href="#">Vård av trä och linne</a>
+        <a href="#">Kontakt</a>
+      </div>
+      <div class="site-footer__col">
+        <p class="site-footer__heading">Almhem</p>
+        <a href="#material">Material</a>
+        <a href="#">Showroom</a>
+        <a href="#journal">Journalen</a>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 Almhem AB</span>
+      <span>Klarna · Swish · Kort</span>
+    </div>
+  </footer>
+
+  <button type="button" class="cart-overlay" id="cartOverlay" aria-hidden="true" tabindex="-1"></button>
+  <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle" aria-hidden="true">
+    <div class="cart-drawer__head">
+      <span id="cartDrawerTitle">Varukorg (<span data-cart-count>0</span>)</span>
+      <button type="button" class="cart-drawer__close" id="cartClose">Stäng</button>
+    </div>
+    <div class="cart-drawer__body" id="cartBody">
+      <p class="cart-drawer__empty" data-cart-empty>Varukorgen är tom. Lägg till något från kollektionen.</p>
+    </div>
+    <div class="cart-drawer__foot">
+      <div>
+        <p class="cart-progress__label" data-shipping-label>Fri frakt över 2 000 kr</p>
+        <div class="cart-progress__track">
+          <div class="cart-progress__fill" data-shipping-fill></div>
+        </div>
+      </div>
+      <div class="cart-drawer__sum">
+        <span>Summa</span>
+        <span data-cart-sum>0 kr</span>
+      </div>
+      <a href="#" class="cart-drawer__checkout">Till kassan</a>
+      <p class="cart-drawer__footnote">Fri frakt över 2 000 kr</p>
+    </div>
+  </aside>
+
+  <script src="cart-logic.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+</html>

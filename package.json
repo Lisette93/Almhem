@@ -1,0 +1,8 @@
+{
+  "name": "almhem",
+  "private": true,
+  "description": "Almhem — landningssida och produktsida, ren HTML/CSS/JS utan byggkedja.",
+  "scripts": {
+    "test": "node --test"
+  }
+}
